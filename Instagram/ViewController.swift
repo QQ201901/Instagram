@@ -6,10 +6,10 @@
 //  Copyright © 2019 QQ201901. All rights reserved.
 //
 
-
+import UIKit
 import Firebase // 先頭でFirebaseをimportしておく
 import FirebaseAuth
-import UIKit
+
 import ESTabBarController
 
 class ViewController: UIViewController {
