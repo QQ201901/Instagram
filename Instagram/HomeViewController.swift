@@ -13,7 +13,6 @@ import FirebaseDatabase
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
     @IBOutlet weak var tableView: UITableView!
 
     var postArray: [PostData] = []
@@ -120,6 +119,11 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // セル内のボタンのアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
         
+        
+        // 課題：セル内のCommnetボタンのアクションをソースコードで設定する
+        cell.commentButton.addTarget(self, action:#selector(handleButton2(_:forEvent:)), for: .touchUpInside)
+        //
+        
         return cell
     }
     
@@ -159,5 +163,47 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
         }
     }
+    
+    // 課題：セル内のCommnetボタンがタップされた時に呼ばれるメソッド
+    @objc func handleButton2(_ sender: UIButton, forEvent event: UIEvent) {
+        print("DEBUG_PRINT: commentボタンがタップされました。")
+  
+        // タップされたセルのインデックスを求める
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+            
+      // 配列からタップされたインデックスのデータを取り出す
+        let postData = postArray[indexPath!.row]
+        
+        let existingCommnet = postData.comment
+//        print(existingCommnet)
+        
+        //        self.existingComment = CommentTableViewCell.existingComment
+        
+
+        
+        
+ //       let commentLabel = cell.viewWithTag(2) as! UILabel
+        //indexPath.rowに該当するPost()クラスのuserNameを入れる
+//        commentLabel.text = posts[indexPath.row].comment
+        
+//        return cell
+        
+        
+        
+        //Commentボタン押下時の画面遷移、ここから
+        // ①storyboardのインスタンス取得
+        let storyboard: UIStoryboard = self.storyboard!
+        // ②遷移先ViewControllerのインスタンス取得
+        let nextView = storyboard.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
+        // ③画面遷移
+        self.present(nextView, animated: true, completion: nil)
+        // ここまで
+
+    
+    }
+    //
+    
     
 }

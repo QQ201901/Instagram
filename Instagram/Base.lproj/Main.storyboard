@@ -110,6 +110,36 @@
             </objects>
             <point key="canvasLocation" x="228" y="118.29085457271366"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="mxX-CE-IjF">
+            <objects>
+                <viewController storyboardIdentifier="Comment" id="X8p-k9-pun" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u8K-50-hqj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZxO-7q-2U3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZxO-7q-2U3" firstAttribute="leading" secondItem="6T1-lS-IX7" secondAttribute="leading" id="MMH-uo-sOZ"/>
+                            <constraint firstItem="6T1-lS-IX7" firstAttribute="bottom" secondItem="ZxO-7q-2U3" secondAttribute="bottom" id="bJi-Nu-kFU"/>
+                            <constraint firstItem="6T1-lS-IX7" firstAttribute="trailing" secondItem="ZxO-7q-2U3" secondAttribute="trailing" id="bk9-B3-lva"/>
+                            <constraint firstItem="ZxO-7q-2U3" firstAttribute="top" secondItem="6T1-lS-IX7" secondAttribute="top" id="gHZ-Wm-eNl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6T1-lS-IX7"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentTableView" destination="ZxO-7q-2U3" id="ivq-Uc-Hhm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hi0-8t-0hF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="1574"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="AmF-jZ-fAR">
             <objects>

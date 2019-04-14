@@ -20,6 +20,9 @@
 		1864B4442250600C00E02C52 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1864B4432250600C00E02C52 /* SettingViewController.swift */; };
 		1864B44822506FEB00E02C52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1864B44722506FEB00E02C52 /* GoogleService-Info.plist */; };
 		186994D7225399B4007FE673 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186994D6225399B4007FE673 /* PostViewController.swift */; };
+		187ED0F5225B5A660036E92D /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187ED0F3225B5A660036E92D /* CommentTableViewCell.swift */; };
+		187ED0F6225B5A660036E92D /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187ED0F4225B5A660036E92D /* CommentTableViewCell.xib */; };
+		187ED0F8225B5D470036E92D /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187ED0F7225B5D470036E92D /* CommentViewController.swift */; };
 		1880E030225420EA004EE60E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880E02F225420EA004EE60E /* Const.swift */; };
 		1880E0322254253B004EE60E /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880E0312254253B004EE60E /* PostData.swift */; };
 		C98B6C7A7893D4F29BED6100 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B0AFCC2EE81619849D9574 /* Pods_Instagram.framework */; };
@@ -41,6 +44,9 @@
 		1864B4432250600C00E02C52 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1864B44722506FEB00E02C52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		186994D6225399B4007FE673 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		187ED0F3225B5A660036E92D /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		187ED0F4225B5A660036E92D /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		187ED0F7225B5D470036E92D /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		1880E02F225420EA004EE60E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		1880E0312254253B004EE60E /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		8DF1A530EEADD00ABF903017 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 				1880E0312254253B004EE60E /* PostData.swift */,
 				1828413F225A28A40024BE21 /* PostTableViewCell.swift */,
 				18284140225A28A40024BE21 /* PostTableViewCell.xib */,
+				187ED0F3225B5A660036E92D /* CommentTableViewCell.swift */,
+				187ED0F4225B5A660036E92D /* CommentTableViewCell.xib */,
+				187ED0F7225B5D470036E92D /* CommentViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -179,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1864B43422505BAB00E02C52 /* LaunchScreen.storyboard in Resources */,
+				187ED0F6225B5A660036E92D /* CommentTableViewCell.xib in Resources */,
 				18284142225A28A40024BE21 /* PostTableViewCell.xib in Resources */,
 				1864B44822506FEB00E02C52 /* GoogleService-Info.plist in Resources */,
 				1864B43122505BAB00E02C52 /* Assets.xcassets in Resources */,
@@ -252,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187ED0F5225B5A660036E92D /* CommentTableViewCell.swift in Sources */,
 				1864B43C22505FC200E02C52 /* LoginViewController.swift in Sources */,
 				1880E0322254253B004EE60E /* PostData.swift in Sources */,
 				1864B42C22505BA800E02C52 /* ViewController.swift in Sources */,
@@ -259,6 +270,7 @@
 				1864B42A22505BA700E02C52 /* AppDelegate.swift in Sources */,
 				1864B44022505FE800E02C52 /* ImageSelectViewController.swift in Sources */,
 				1880E030225420EA004EE60E /* Const.swift in Sources */,
+				187ED0F8225B5D470036E92D /* CommentViewController.swift in Sources */,
 				18284141225A28A40024BE21 /* PostTableViewCell.swift in Sources */,
 				1864B4442250600C00E02C52 /* SettingViewController.swift in Sources */,
 				1864B43E22505FD300E02C52 /* HomeViewController.swift in Sources */,
